@@ -89,6 +89,8 @@ body {
   position: relative;
 }
 .wrap .container .card .img img {
+  height: 100%;
+  object-fit: cover;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
