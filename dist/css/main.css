@@ -51,7 +51,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 4rem;
+  padding: 10px 4rem;
   flex: 1;
   background-color: hsl(244deg, 38%, 16%);
   border-top-left-radius: 20px;
@@ -110,7 +110,6 @@ body {
     padding: 10px;
   }
   .wrap .container {
-    width: 90%;
     border-radius: 70px;
   }
   .wrap .container .card {
