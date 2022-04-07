@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+  background-color: hsl(233deg, 47%, 7%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .container {
+  max-width: 1100px;
+}
+.wrap .container .card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: wrap;
+  justify-content: center;
+  position: relative;
+}
+.wrap .container .card .article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 4rem;
+  flex: 1;
+  background-color: hsl(244deg, 38%, 16%);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.wrap .container .card .article > * {
+  margin-bottom: 1rem;
+}
+.wrap .container .card .article h1 {
+  color: hsl(0deg, 0%, 100%);
+}
+.wrap .container .card .article h1 span {
+  color: hsl(277deg, 64%, 61%);
+}
+.wrap .container .card .article > p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+.wrap .container .card .article .numbers {
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.wrap .container .card .article .numbers .bold {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.wrap .container .card .article .numbers .stat--headings {
+  font-size: 14px;
+  color: hsla(0deg, 0%, 100%, 0.6);
+  margin-top: 5px;
+}
+.wrap .container .card .img {
+  position: relative;
+}
+.wrap .container .card .img img {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.wrap .container .card .img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(284deg, 76%, 30%, 0.736);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .wrap {
+    height: max-content;
+    padding: 10px;
+  }
+  .wrap .container {
+    width: 90%;
+    border-radius: 70px;
+  }
+  .wrap .container .card {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .wrap .container .card .article {
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0;
+  }
+  .wrap .container .card .article h1 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .wrap .container .card .article p {
+    text-align: center;
+  }
+  .wrap .container .card .article .numbers {
+    flex-direction: column;
+  }
+  .wrap .container .card .article .numbers > :nth-child(2) {
+    margin: 1.5rem 0;
+  }
+  .wrap .container .card .img {
+    position: relative;
+  }
+  .wrap .container .card .img img {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+  }
+  .wrap .container .card .img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(284deg, 76%, 30%, 0.736);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
